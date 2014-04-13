@@ -1,0 +1,186 @@
+\documentclass{scrartcl}
+
+\usepackage[nochapters]{classicthesis}
+\usepackage[LabelsAligned]{currvita}
+\usepackage[english,ngerman]{babel}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage[left=12em, right=10em, top=3em, bottom=3em]{geometry}
+
+\reversemarginpar
+
+%Length of the date
+\newlength{\datebox}\settowidth{\datebox}{LONGEST DATE}
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}}
+\newcommand{\NewEntry}[3]{\noindent\hangindent=0em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{0.5em} #2 #3 \vspace{0.5em}}
+\newcommand{\Description}[1]{\hangindent=0em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
+\date{}
+
+% Name color
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} 
+
+% Link colors
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} 
+
+\begin{document}
+
+\thispagestyle{empty}
+
+% PERSONAL
+
+% Name
+\begin{cv}{{\color{gray}Curriculum Vit\ae} \\ \spacedallcaps{Firstname Lastname}}\vspace{1.5em} 
+
+% Personal information
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} 
+
+% Birthplace and date
+\NewEntry{Born}{City,}{01st of January 2000} 
+
+% Citizenship
+\NewEntry{Nationality}{German} 
+
+% Family status
+\NewEntry{Marital status}{Single} 
+
+% Email address
+\newcommand{\email}{example@example.com}
+\NewEntry{Email}{\href{mailto:\email}{\email}} 
+
+% Phone home
+\NewEntry{Phone}{+49 (0)123 123 123 12} 
+
+% Phone mobile
+\NewEntry{Mobile}{+49 (0)123 123 123 12} 
+
+\vspace{3em}
+
+% WORK
+
+\noindent\spacedlowsmallcaps{Work}\vspace{1em}
+
+
+\NewEntry{03/2003--04/2004}{Job title, \textsc{Company}}
+
+\Description{\MarginText{\href{http://www.example.com}{Company}}Description of work.}
+
+
+\NewEntry{02/2002--03/2003}{Job title, \textsc{Company}}
+
+\Description{\MarginText{\href{http://www.example.com}{Company}}Description of work.}
+
+
+\NewEntry{01/2001--02/2002}{Job title, \textsc{Company}}
+
+\Description{\MarginText{\href{http://www.example.com}{Company}}Description of work.}
+
+\vspace{3em}
+
+% EDUCATION
+
+\spacedlowsmallcaps{Education}\vspace{1em}
+
+\NewEntry{03/2003-04/2004}{School}
+
+\Description{\MarginText{Major\\\vspace{1em}Minor}Degree: Bachelor, grade: 1.0\newline 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
+
+\NewEntry{02/2002-03/2003}{School}
+
+\Description{\MarginText{Major\\\vspace{1em}Minor}Degree: Bachelor, grade: 1.0\newline 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
+
+\NewEntry{01/2001-02/2002}{School}
+
+\Description{\MarginText{Major\\\vspace{1em}Minor}Degree: Bachelor, grade: 1.0\newline 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
+
+\newpage
+
+\vspace{3em}
+
+% PROJECTS
+
+\spacedlowsmallcaps{Projects}\vspace{1em}
+
+\setlength{\datebox}{1.5em}
+
+\NewEntry{2003}{Title}
+
+\Description{\MarginText{\href{http://www.example.com}{Title}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
+
+\NewEntry{2002}{Title}
+
+\Description{\MarginText{\href{http://www.example.com}{Title}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
+
+\NewEntry{2001}{Title}
+
+\Description{\MarginText{\href{http://www.example.com}{Title}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
+
+\vspace{3em}
+
+% COMPUTER
+
+\spacedlowsmallcaps{Programming Languages}\vspace{1em}
+
+\Description{\MarginText{Basic}Plankalk\"ul}
+
+\Description{\MarginText{Intermediate}Fortran}
+
+\Description{\MarginText{Advanced}Lisp}
+
+\vspace{3em}
+
+\spacedlowsmallcaps{Technologies}\vspace{1em}
+
+\Description{\MarginText{Basic}Basic technologies}
+
+\Description{\MarginText{Intermediate}Intermediate technologies}
+
+\Description{\MarginText{Advanced}Advanced technologies}
+
+% MISC
+
+\newpage
+
+\spacedlowsmallcaps{Natural Languages}\vspace{1em}
+
+% Languages
+
+\newlength{\langbox}
+
+% Longest language
+\settowidth{\langbox}{LONGEST LANGUAGE} 
+
+\Description{\parbox{\langbox}{\textsc{German}}\ \ $\cdotp$\ \ \ Native}
+
+\vspace{-0.5em}
+
+\Description{\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Advanced}
+
+\vspace{-0.5em}
+
+\Description{\parbox{\langbox}{\textsc{Klingon}}\ \ $\cdotp$\ \ \ Advanced}
+
+\vspace{3em}
+
+% Interests
+
+\spacedlowsmallcaps{Interests}\vspace{1em}
+
+\newlength{\intbox}
+
+% Longest interest
+\settowidth{\intbox}{LONGEST INTEREST} 
+
+\newcommand{\cspace}{\hspace{13.8em}}
+
+\Description{\parbox{\intbox}{\textsc{Information Security}}\ \ $\cdotp$\ \ \ \{Application, Network, Web\} $\times$ Security\\ \cspace{}Cryptography/Cryptology\\\cspace{}Reverse Engineering}
+
+\null
+\vfill
+
+City, \selectlanguage{english}\today
+\end{cv}
+\end{document}

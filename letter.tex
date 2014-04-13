@@ -1,0 +1,42 @@
+\documentclass{scrlttr2} 
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{ngerman}
+\usepackage{times}
+
+\KOMAoptions{
+    paper=a4,
+    fromalign=center,
+    fromrule=aftername,
+    backaddress=true,
+    parskip=half,
+    enlargefirstpage=true,
+    firstfoot=false
+}
+
+\newcommand{\firstname}{Firstname }
+\newcommand{\lastname}{Lastname}
+\newcommand{\city}{City}
+
+\setkomavar{fromname}{\firstname \lastname}
+\setkomavar{fromaddress}{Street\\Zip \city}
+\setkomavar{signature}{\firstname \lastname}
+\setkomavar{subject}{Subject}
+\setkomavar{place}{\city}
+\let\raggedsignature=\raggedright
+
+\firsthead{}
+  
+\begin{document}
+\begin{letter}{Recipient Name\\Recipient Street\\Recipient Address}
+ 
+\opening{Form of Address,}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+\closing{Yours sincerely,}
+\encl{Enclosing}
+\enlargethispage{3\baselineskip}
+\end{letter}
+\end{document}
